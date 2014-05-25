@@ -63,6 +63,15 @@ public:
      * @returns true if implemented, false otherwise
      */
     virtual bool handleDelete(CivetServer *server, struct mg_connection *conn);
+    
+    /**
+     * Callback method for OPTIONS request
+     * 
+     * @param server - the calling server
+     * @param conn - the connection information
+     * @return true if implemented, false otherwise
+     */
+    virtual bool handleOptions(CivetServer *server, struct mg_connection *conn);
 
 };
 
